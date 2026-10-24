@@ -25,19 +25,6 @@ The second plate, `motivation_cognition_loop_diagram.png`, is rendered by
 `NEW FILES/`). The build script quantises it to 256 colours on the way in —
 lossless for the flat fills the figure uses, and much smaller.
 
-## Rebuilding
-
-```sh
-python motivation_cognition_loop_diagram.py     # render the plate first
-python build_motivation_cognition_loop_page.py  # inline + emit the page
-```
-
-The build script reads `the-motivation-cognition-loop.src.html` and both image
-files **from the current directory**, and writes
-`the-motivation-cognition-loop.html`. Copy or rename that output over
-`index.html`. It raises if either placeholder is missing from the template.
-
-Requires Python with [Pillow](https://pypi.org/project/Pillow/).
 
 ## How the page is built
 
